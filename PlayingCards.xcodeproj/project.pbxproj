@@ -59,12 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				F88425DB211E55A400779261 /* SupportingFiles */,
-				F88425CB211E558B00779261 /* ViewController.swift */,
-				F88425CD211E558B00779261 /* Main.storyboard */,
 				F88425D0211E558C00779261 /* Assets.xcassets */,
-				F88425D5211E558C00779261 /* Info.plist */,
+				F88425CD211E558B00779261 /* Main.storyboard */,
 				F88425DC211E5B6C00779261 /* PlayingCard.swift */,
+				F88425CB211E558B00779261 /* ViewController.swift */,
 				F88425DE211E618900779261 /* Deck.swift */,
+				F88425D5211E558C00779261 /* Info.plist */,
 			);
 			path = PlayingCards;
 			sourceTree = "<group>";

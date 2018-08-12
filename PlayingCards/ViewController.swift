@@ -7,10 +7,9 @@ class ViewController: UIViewController {
         var deck = PlayingCardDeck();
         for _ in 1...10 {
             if let card = deck.draw() {
-                print("\(card.suit), \(card.rank)");
+                print("\(card)");
             }
         }
     }
-
 }
 
