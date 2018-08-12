@@ -35,7 +35,7 @@ class PlayingCardView: UIView {
     }
     
     private var cornerString: NSAttributedString {
-        return centeredAttributedString(rankString + "\n" + suit, fontSize: 0.0)
+        return centeredAttributedString(rankString + "\n" + suit, fontSize: cornerFontSize);
     }
     
     private lazy var upperLeftCornerLabel = createCornerLabel();
@@ -69,7 +69,7 @@ class PlayingCardView: UIView {
             .offsetBy(dx: -lowerRightCornerLabel.frame.size.width, dy: -lowerRightCornerLabel.frame.size.height)
         lowerRightCornerLabel.transform = CGAffineTransform.identity.rotated(by: CGFloat.pi) //this would rotate around the origin i.e top left of this label
         //bring it down to the lower right
-        lowerRightCornerLabel.transform = CGAffineTransform.identity.translatedBy(x: lowerRightCornerLabel.frame.size.width, y: lowerRightCornerLabel.frame.size.height)        
+        lowerRightCornerLabel.transform = CGAffineTransform.identity.translatedBy(x: lowerRightCornerLabel.frame.size.width, y: lowerRightCornerLabel.frame.size.height)
         
         
         
@@ -148,7 +148,6 @@ extension CGRect {
         let newHeight = height * scale;
         return insetBy(dx: (width - newWidth) / 2, dy: (height - newHeight) / 2)
     }
-    
     
 }
 

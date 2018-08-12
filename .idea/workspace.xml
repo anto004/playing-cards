@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7608ca51-ae1b-43d6-8080-543c9dd49c27" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PlayingCards/PlayingCardView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.xcworkspace/xcuserdata/anto004.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.xcworkspace/xcuserdata/anto004.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayingCards/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards/Base.lproj/Main.storyboard" afterDir="false" />
-    </list>
+    <list default="true" id="7608ca51-ae1b-43d6-8080-543c9dd49c27" name="Default" comment="" />
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/PlayingCards-bozmpwnwwexhtjdsjsxwumnwxdnc/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +34,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlayingCards/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -68,7 +62,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="530" />
+    <option name="x" value="316" />
     <option name="y" value="48" />
     <option name="width" value="1025" />
     <option name="height" value="797" />
@@ -134,15 +128,16 @@
       <option name="presentableId" value="Default" />
       <updated>1533946181957</updated>
       <workItem from="1533946185553" duration="400000" />
-      <workItem from="1534106976066" duration="2368000" />
+      <workItem from="1534106976066" duration="2890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2768000" />
+    <option name="totallyTimeSpent" value="3290000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="530" y="48" width="1025" height="797" extended-state="0" />
+    <frame x="316" y="48" width="1025" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -195,8 +190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlayingCards/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
