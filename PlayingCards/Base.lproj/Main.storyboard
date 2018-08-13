@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,16 +20,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="u1d-MB-NXc" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <rect key="frame" x="16" y="69" width="343" height="549"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="800" id="DVB-FN-rae"/>
+                                    <constraint firstAttribute="width" secondItem="u1d-MB-NXc" secondAttribute="height" multiplier="5:8" id="ZXf-iN-HnR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u1d-MB-NXc" secondAttribute="trailing" constant="16" id="Kkd-rZ-bh5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u1d-MB-NXc" secondAttribute="bottom" constant="20" id="S2S-hq-hcu"/>
-                            <constraint firstItem="u1d-MB-NXc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="g5h-1o-sWz"/>
-                            <constraint firstItem="u1d-MB-NXc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vej-sA-0bw"/>
+                            <constraint firstItem="u1d-MB-NXc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Lm-Ca-xIk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u1d-MB-NXc" secondAttribute="trailing" constant="16" id="Kkd-rZ-bh5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u1d-MB-NXc" secondAttribute="bottom" constant="16" id="S2S-hq-hcu"/>
+                            <constraint firstItem="u1d-MB-NXc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="g5h-1o-sWz"/>
+                            <constraint firstItem="u1d-MB-NXc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="t8E-WD-io0"/>
+                            <constraint firstItem="u1d-MB-NXc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="vej-sA-0bw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
