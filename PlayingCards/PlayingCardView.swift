@@ -12,7 +12,7 @@ class PlayingCardView: UIView {
     };
     
     @IBInspectable
-    var suit: String = "❤️"{
+    var suit: String = "♣️"{
         didSet{
             setNeedsDisplay();
             setNeedsLayout();
