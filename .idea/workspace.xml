@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7608ca51-ae1b-43d6-8080-543c9dd49c27" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.xcworkspace/xcuserdata/anto004.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards.xcodeproj/project.xcworkspace/xcuserdata/anto004.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayingCards/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayingCards/PlayingCardView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards/PlayingCardView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayingCards/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlayingCards/ViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/PlayingCards-bozmpwnwwexhtjdsjsxwumnwxdnc/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/PlayingCards/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -142,12 +146,12 @@
       <updated>1533946181957</updated>
       <workItem from="1533946185553" duration="400000" />
       <workItem from="1534106976066" duration="3312000" />
-      <workItem from="1534192221398" duration="1770000" />
+      <workItem from="1534192221398" duration="1856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5482000" />
+    <option name="totallyTimeSpent" value="5568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="352" y="23" width="1088" height="877" extended-state="0" />
@@ -218,7 +222,7 @@
     <entry file="file://$PROJECT_DIR$/PlayingCards/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
