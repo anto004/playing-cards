@@ -24,6 +24,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-zc-dpo" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -32,6 +35,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-Wm-v1n" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -48,6 +54,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value="❤️"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAR-ZI-8Tw" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -56,6 +66,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-oa-Zpv" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -80,6 +93,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16H-FC-o8t" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -88,6 +104,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value="❤️"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9Y-A2-MpS" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -104,6 +121,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value="🔷"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-Ua-k2Q" customClass="PlayingCardView" customModule="PlayingCards" customModuleProvider="target">
@@ -115,12 +133,25 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.23921568630000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="viewCards" destination="TNB-2h-CdF" collectionClass="NSMutableArray" id="any-n4-M3v"/>
-                        <outletCollection property="viewCards" destination="cgi-zc-dpo" collectionClass="NSMutableArray" id="1Ly-4c-nNU"/>
+                        <outletCollection property="cardViews" destination="EEd-zP-RFR" collectionClass="NSMutableArray" id="Uoz-Uh-8iu"/>
+                        <outletCollection property="cardViews" destination="16H-FC-o8t" collectionClass="NSMutableArray" id="oeo-w3-eK0"/>
+                        <outletCollection property="cardViews" destination="x9Y-A2-MpS" collectionClass="NSMutableArray" id="IfR-Km-UmY"/>
+                        <outletCollection property="cardViews" destination="iHp-Ua-k2Q" collectionClass="NSMutableArray" id="vlc-N0-ptV"/>
+                        <outletCollection property="cardViews" destination="m9C-74-o5A" collectionClass="NSMutableArray" id="4Eb-b8-pJD"/>
+                        <outletCollection property="cardViews" destination="x9Y-A2-MpS" collectionClass="NSMutableArray" id="cDM-WT-ilq"/>
+                        <outletCollection property="cardViews" destination="16H-FC-o8t" collectionClass="NSMutableArray" id="9yo-a3-c9l"/>
+                        <outletCollection property="cardViews" destination="EEd-zP-RFR" collectionClass="NSMutableArray" id="piE-y4-9v8"/>
+                        <outletCollection property="cardViews" destination="KPf-AA-are" collectionClass="NSMutableArray" id="nR3-VR-RJK"/>
+                        <outletCollection property="cardViews" destination="McQ-oa-Zpv" collectionClass="NSMutableArray" id="Ksh-mB-9N5"/>
+                        <outletCollection property="cardViews" destination="TAR-ZI-8Tw" collectionClass="NSMutableArray" id="1hY-0B-ixa"/>
+                        <outletCollection property="cardViews" destination="svX-zO-P39" collectionClass="NSMutableArray" id="ygC-ZD-vIf"/>
+                        <outletCollection property="cardViews" destination="S3p-Wm-v1n" collectionClass="NSMutableArray" id="qRq-2b-BOZ"/>
+                        <outletCollection property="cardViews" destination="cgi-zc-dpo" collectionClass="NSMutableArray" id="0uY-3Y-Nsf"/>
+                        <outletCollection property="cardViews" destination="TNB-2h-CdF" collectionClass="NSMutableArray" id="aSL-ts-h6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
