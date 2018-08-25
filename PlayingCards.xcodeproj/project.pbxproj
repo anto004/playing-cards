@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F823306B2132049800406812 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823306A2132049800406812 /* CardBehavior.swift */; };
 		F88425CA211E558B00779261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88425C9211E558B00779261 /* AppDelegate.swift */; };
 		F88425CC211E558B00779261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88425CB211E558B00779261 /* ViewController.swift */; };
 		F88425CF211E558B00779261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88425CD211E558B00779261 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F823306A2132049800406812 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 		F88425C6211E558B00779261 /* PlayingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88425C9211E558B00779261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88425CB211E558B00779261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				F88425CD211E558B00779261 /* Main.storyboard */,
 				F88425DC211E5B6C00779261 /* PlayingCard.swift */,
 				F88425CB211E558B00779261 /* ViewController.swift */,
+				F823306A2132049800406812 /* CardBehavior.swift */,
 				F88425DE211E618900779261 /* Deck.swift */,
 				F88425D5211E558C00779261 /* Info.plist */,
 				F8E897822120DD79005DE4A6 /* PlayingCardView.swift */,
@@ -157,6 +160,7 @@
 				F88425DD211E5B6C00779261 /* PlayingCard.swift in Sources */,
 				F8E897832120DD79005DE4A6 /* PlayingCardView.swift in Sources */,
 				F88425CA211E558B00779261 /* AppDelegate.swift in Sources */,
+				F823306B2132049800406812 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
