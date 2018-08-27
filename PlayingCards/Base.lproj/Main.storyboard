@@ -137,9 +137,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="cardViews" destination="EEd-zP-RFR" collectionClass="NSMutableArray" id="Uoz-Uh-8iu"/>
-                        <outletCollection property="cardViews" destination="16H-FC-o8t" collectionClass="NSMutableArray" id="oeo-w3-eK0"/>
-                        <outletCollection property="cardViews" destination="x9Y-A2-MpS" collectionClass="NSMutableArray" id="IfR-Km-UmY"/>
                         <outletCollection property="cardViews" destination="iHp-Ua-k2Q" collectionClass="NSMutableArray" id="vlc-N0-ptV"/>
                         <outletCollection property="cardViews" destination="m9C-74-o5A" collectionClass="NSMutableArray" id="4Eb-b8-pJD"/>
                         <outletCollection property="cardViews" destination="x9Y-A2-MpS" collectionClass="NSMutableArray" id="cDM-WT-ilq"/>
@@ -161,7 +158,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="95.802098950524751"/>
+            <point key="canvasLocation" x="-268" y="84"/>
         </scene>
     </scenes>
 </document>
