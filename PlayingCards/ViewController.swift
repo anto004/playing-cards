@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     private var faceUpCardViews: [PlayingCardView] {
         return cardViews.filter({$0.isFaceUp && !$0.isHidden &&
-                $0.transform != CGAffineTransform.identity.scaledBy(x: 3.0, y: 3.0) && $0.alpha == 1});
+            $0.transform != CGAffineTransform.identity.scaledBy(x: 3.0, y: 3.0) && $0.alpha == 1});
     }
     
     private var faceUpCardViewMatch: Bool {
@@ -44,12 +44,14 @@ class ViewController: UIViewController {
             faceUpCardViews[0].suit == faceUpCardViews[1].suit;
     }
     
-    var lastChosenCardView: PlayingCard?
+    var lastChosenCardView: PlayingCardView?
+    
     @objc
     func flipCard(_ recognizer: UITapGestureRecognizer){
         switch recognizer.state {
         case .ended:
             if let chosenCardView = recognizer.view as? PlayingCardView{
+                lastChosenCardView = chosenCardView;
                 cardBehavior.removeItem(chosenCardView);
 
                 UIView.transition(with: chosenCardView,
@@ -93,19 +95,21 @@ class ViewController: UIViewController {
                                 )
                             }
 
-                            else if self.faceUpCardViews.count == 2 {
-                                cardsToAnimate.forEach({cardView in
-                                    UIView.transition(with: cardView,
-                                            duration: 0.6,
-                                            options: [.transitionFlipFromLeft],
-                                            animations: {
-                                                cardView.isFaceUp = false;
-                                            },
-                                            completion: {finished in
-                                                self.cardBehavior.addItem(cardView)
-                                            })
-                                })
-
+                            else if cardsToAnimate.count == 2 {
+                                //Two transitions working on the same card at the same time
+                                if chosenCardView == self.lastChosenCardView{
+                                    cardsToAnimate.forEach({cardView in
+                                        UIView.transition(with: cardView,
+                                                          duration: 0.6,
+                                                          options: [.transitionFlipFromLeft],
+                                                          animations: {
+                                                            cardView.isFaceUp = false;
+                                        },
+                                                          completion: {finished in
+                                                            self.cardBehavior.addItem(cardView)
+                                        })
+                                    })
+                                }
                             }
                             else {
                                 if !chosenCardView.isFaceUp {
